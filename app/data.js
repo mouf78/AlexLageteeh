@@ -100,7 +100,7 @@ export const staffdata = [
     url: "/An",
   },
   {
-    id: 120975,
+    id: 120977,
     name: "Ouf",
     age: 90,
     salary: 9000,

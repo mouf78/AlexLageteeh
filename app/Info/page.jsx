@@ -1,7 +1,11 @@
+'use client';
 import Link from "next/link";
 import Image from "next/image";
-
+import { useUser } from '@auth0/nextjs-auth0/client';
+import { redirect } from 'next/navigation'
 export default function Info() {
+  const { user, error, isLoading } = useUser();
+  if (!user) redirect('/')
   return (
     <div className="info-titles">
       <ul className="info-list">
