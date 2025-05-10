@@ -17,6 +17,12 @@ function Card({ data }) {
     rank,
     image,
     url,
+    kpi,
+    points,
+    gas,
+    ep,
+    terminal,
+    adsl,
   } = data;
   return (
     <div className="card">
@@ -35,18 +41,18 @@ function Card({ data }) {
             RPM: <span>{rpm}</span>
           </p>
           <p>
-            TNPS: <span>{tnps}</span>
+            AHT: <span>{aht}</span>{" "}
           </p>
           <p>
-            AWT: <span>{awt}</span>
+            KPI: <span>{kpi}</span>
           </p>
         </div>
         <div className="pb">
           <p>
-            PPS: <span>{pps}</span>
+            TNPS: <span>{tnps}</span>
           </p>
           <p>
-            AHT: <span>{aht}</span>
+            AWT: <span>{awt}</span>{" "}
           </p>
           <p>
             Rank: <span>{rank}</span>

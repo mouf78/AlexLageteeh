@@ -28,6 +28,12 @@ const Agents = () => {
     rank,
     image,
     bio,
+    mobile,
+    points,
+    gas,
+    ep,
+    terminal,
+    adsl,
   } = employee;
   return (
     <div className="emp-page">
@@ -49,22 +55,13 @@ const Agents = () => {
           </div>
           <div className="emp-bio">
             <div className="coldata-1">
-              <p className="agent-brief">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
-                voluptatibus consequuntur magni totam tenetur laudantium
-                eligendi beatae sit sint laboriosam maiores dicta distinctio, id
-                asperiores! Fuga sit cupiditate commodi doloremque? Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit. Natus, quas
-                pariatur architecto repellendus numquam nemo. Quidem sapiente
-                similique, eaque nulla amet, iure reprehenderit corrupti
-                eligendi facere distinctio ratione accusantium! Quam.
-              </p>
+              <p className="agent-brief">{bio}</p>
             </div>
             <div className="coldata-2">
               <p>Display Name: {name}</p>
               <p>Hiring Date: {hire}</p>
-              <p>Staff ID: {salary}</p>
-              <p>Mobile Number: {rpm}</p>
+              <p>Staff ID: {id}</p>
+              <p>Mobile Number: {mobile}</p>
               <p>Birth Of date: {anl}</p>
             </div>
           </div>
@@ -80,11 +77,11 @@ const Agents = () => {
         <div className="emp-insight">
           <div className="coldata">
             <h3>Target</h3>
-            <p>Points: {bio}</p>
-            <p>GAs: {hire}</p>
-            <p>EP: {salary}</p>
-            <p>Terminal: {rpm}</p>
-            <p>ADSL: {anl}</p>
+            <p>Points: {points}</p>
+            <p>GAs: {gas}</p>
+            <p>EP: {ep}</p>
+            <p>Terminal: {terminal}</p>
+            <p>ADSL: {adsl}</p>
           </div>
           <div className="coldata">
             <h3>Ach</h3>
@@ -96,11 +93,11 @@ const Agents = () => {
           </div>
           <div className="coldata">
             <h3>%</h3>
-            <p>Points: {bio}</p>
-            <p>GAs: {hire}</p>
-            <p>EP: {salary}</p>
-            <p>Terminal: {rpm}</p>
-            <p>ADSL: {anl}</p>
+            <p>Points: {points}</p>
+            <p>GAs: {gas}</p>
+            <p>EP: {ep}</p>
+            <p>Terminal: {terminal}</p>
+            <p>ADSL: {adsl}</p>
           </div>
           <div className="coldata">
             <h3>Projection</h3>
