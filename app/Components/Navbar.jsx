@@ -12,6 +12,7 @@ function Navbar() {
       <Link href="/">
         <Image src={`/avatars/logo.png`} width={100} height={100} />
       </Link>
+      <></>
       {!!user && <>
         <Link href="/Info">Info</Link>
         <Link href="/Sch">Sch</Link>
